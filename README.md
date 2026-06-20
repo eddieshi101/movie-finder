@@ -1,16 +1,43 @@
-# React + Vite
+# 🎬 MovieFinder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, highly responsive React web application that allows users to discover popular movies, search a global database via real-time asynchronous API integration, and curate a persistent list of personal favorites.
 
-Currently, two official plugins are available:
+Built on top of **React 19** and bundled with **Vite 8**, this project delivers exceptional performance, instantaneous hot-module replacement (HMR), and lightning-fast build speeds.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **🔥 Real-Time Discoverability:** Dynamically fetches and showcases currently popular movies straight from The Movie Database (TMDB) REST API on initial page mount.
+- **🔍 Intelligent Search Engine:** Debounced asynchronous lookup utility that queries the global TMDB database with URL-safe query sanitization.
+- **❤️ Global Contextual Favorites Framework:** Uses a centralized state wrapper layer implementing React Context to instantly sync favorited items across decoupled views without prop drilling.
+- **💾 Persistent Browser Storage System:** Leverages the client-side `localStorage` subsystem to maintain your custom favorites list seamlessly across session reloads and browser closures.
+- **🛡️ Data Integrity Guards:** Built-in fallback architectures (optional chaining operators and default content triggers) ensuring full stability against sparse or incomplete API objects.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack & Architecture
+
+- **Core Framework:** React 19 (Component-driven structure)
+- **Routing Engine:** React Router DOM v7 (Declarative client-side SPAs routing architecture)
+- **Build Tooling & Server:** Vite v8 + Rolldown (Next-generation lightning bundling)
+- **Linter System:** ESLint v10 (Strict semantic and syntax validation standard)
+- **External Integration:** The Movie Database (TMDB) v3 REST API
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to configure your workspace and run the movie dashboard application locally on your machine.
+
+### 📋 Prerequisites
+
+Ensure you have **Node.js** installed on your system:
+- [Node.js (v18.0.0 or higher recommended)](https://nodejs.org/)
+
+### 🔧 Installation Steps
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/eddieshi101/movie-finder.git](https://github.com/eddieshi101/movie-finder.git)
+   cd movie-finder/frontend
